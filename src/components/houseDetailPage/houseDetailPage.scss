@@ -1,0 +1,149 @@
+.house-detail-page {
+	padding: 10px;
+
+	@media only screen and (min-width: 900px) {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	&__header {
+		position: relative;
+	}
+
+	&__main-image {
+		border-radius: 3px;
+		height: 50vh;
+		object-fit: cover;
+	}
+
+	&__share {
+		position: absolute;
+		top: 24px;
+		right: 24px;
+		cursor: pointer;
+	}
+
+	&__price-card {
+		position: absolute;
+		bottom: 24px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		padding: 12px;
+		border-radius: 3px;
+		display: flex;
+		flex-direction: column;
+		width: fit-content;
+		align-items: center;
+		justify-content: center;
+		color: $white;
+		background-color: rgba($white, 0.3);
+		backdrop-filter: blur(5px);
+	}
+
+	&__price-card-title {
+		font-size: 10px;
+	}
+
+	&__price-card-price {
+		font-weight: bold;
+	}
+
+	&__card {
+		position: relative;
+		background-color: $white;
+		border-radius: 3px;
+		padding: 24px;
+		margin: 12px 0;
+		@media only screen and (min-width: 900px) {
+			margin: 12px;
+		}
+	}
+
+	&__card-title {
+		font-size: 18px;
+		margin-bottom: 4px;
+	}
+
+	&__card-subtitle {
+		font-size: 12px;
+		color: $grey;
+		margin-bottom: 24px;
+	}
+
+	&__usp {
+		display: flex;
+		margin-bottom: 24px;
+	}
+
+	&__usp-item {
+		display: flex;
+		align-items: center;
+		margin-right: 24px;
+
+		i {
+			width: 24px;
+			height: 24px;
+			background-color: $primary;
+			color: $secondary;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 24px;
+			font-size: 12px;
+			margin-right: 8px;
+		}
+	}
+
+	&__section-title {
+		color: $secondary;
+		font-size: 16px;
+		margin-bottom: 8px;
+	}
+
+	&__description {
+		position: relative;
+		&:after {
+			position: absolute;
+			width: 100%;
+			height: 5rem;
+			bottom: 0;
+			left: 0;
+			content: '';
+			background: linear-gradient(hsla(0, 0%, 100%, 0), #fff);
+		}
+	}
+
+	&__read-more {
+		display: flex;
+		padding: 10px 0;
+		color: $secondary;
+		justify-content: center;
+		align-items: center;
+		font-weight: bold;
+
+		i {
+			margin-right: 4px;
+		}
+	}
+
+	&__detail {
+		display: flex;
+		border-top: 1px solid rgba($grey, 0.2);
+		padding: 10px 0;
+		margin: 10px 0;
+		flex-direction: column;
+		@media only screen and (min-width: 900px) {
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+
+	&__detail-key {
+		color: $grey;
+		font-size: 14px;
+		@media only screen and (min-width: 900px) {
+			min-width: 33%;
+		}
+	}
+}
